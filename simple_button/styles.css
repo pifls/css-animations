@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: #666666;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 6px 6px 20px #000;
+    cursor: pointer;
+    transition-property: height, width background-color, transform;
+    transition-duration: 1s, 1s, 0s, 1s;
+    transition-timing-function: ease-out;
+}
+.box:hover {
+    height: 300px;
+    width: 300px;
+    background-color: #aaaaaa;
+}
+.box:active {
+    transform: rotateY(20deg);
+}
